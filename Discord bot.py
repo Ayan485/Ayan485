@@ -3,8 +3,8 @@ from wsgiref import headers
 import requests
 
 API_ENDPOINT = 'https://discord.com/api/v8'
-CLIENT_ID = '976809093249527848'
-CLIENT_SECRET = '7SiW9F65PzQXZbo28a0bnOsrXdsjVLyz'
+CLIENT_ID = 'Enter Id'
+CLIENT_SECRET = 'Enter Secret Id'
 REDIRECT_URI = "https://google.com"
 
 def exchange_code(code):
@@ -22,8 +22,8 @@ def exchange_code(code):
     return r.json
 
 def add_to_guild(access_token, userID):
-    url = API_ENDPOINT + "/guilds/976823169228873729/members/" + userID
-    botToken = 'OTc2ODA5MDkzMjQ5NTI3ODQ4.GtHEYQ.DpDULpD_KCDxpLmo8XmXws8R87YSimyeEpebD0'
+    url = API_ENDPOINT + "enter guild id" + userID
+    botToken = 'Enter Token'
 
     data = {
        "acces_token": access_token 
@@ -35,6 +35,6 @@ def add_to_guild(access_token, userID):
     response = requests.post(url = url, headers=headers, json=data)
     print(response.text)
 
-code = exchange_code('AxS8rpS7RT8kaJFBwd5YnO8nHWIAZj')['access_token']
+code = exchange_code('enter token')['access_token']
 print(code)
-add_to_guild(code, '731761525005615155')
+add_to_guild(code, 'enter id')
