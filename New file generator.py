@@ -5,7 +5,7 @@ Name = str(input("Enter file name\n"))
 extension = str(input("Enter extension\n"))
 
 
-filepath = r"C:/Users/Ayan/Desktop/"+ Name + "." + extension
+filepath = r"C:/Users/Desktop/"+ Name + "." + extension
 wb = openpyxl.Workbook()
 Sheet_name = wb.sheetnames
 wb.save(filepath)
