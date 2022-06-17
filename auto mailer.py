@@ -6,8 +6,8 @@ from email import encoders
 
 recipients = ''' + str(input("Enter E-mail IDs ")) + '''
 
-email_user = 'ennmeemayan.2971.11Sc@gmail.com'
-email_password = 'Ennmeemayan'
+email_user = 'Enter your e-mail id'
+email_password = 'Enter the password'
 email_send = recipients
 
 sub =  str(input("Enter the Subject"))
@@ -24,7 +24,7 @@ bd = str(input("Enter The Mail"))
 body = bd
 msg.attach(MIMEText(body,'plain'))
 
-filename=r"C:\Users\Ayan\Pictures\Saved Pictures\do-a-simple-but-cool-profile-pic-or-logo-for-u.jpeg"
+filename=r"Enter The Path Of Attachment"
 attachment  =open(filename,"rb")
 
 part = MIMEBase('application','octet-stream')
